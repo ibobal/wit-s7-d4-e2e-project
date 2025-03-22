@@ -1,4 +1,7 @@
+import { Switch, Route } from "react-router-dom";
+
 import Success from "./components/Success";
+import Login from "./components/Login";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,7 +22,6 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <LocationDisplay />
     </>
   );
 }
