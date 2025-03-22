@@ -1,28 +1,24 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Success from "./components/Success";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <>
-      <Header />
       <div className="content-section">
         <Switch>
           <Route exact path="/">
             <Login />
           </Route>
-          <Route exact path="/main">
-            <SideBar />
-            <Products />
+          <Route exact path="/success">
+            <Success />
           </Route>
           <Route exact path="/error">
-            <ErrorPage />
+            <h1>Error Page Placeholder</h1>
           </Route>
         </Switch>
       </div>
-      <Footer />
       <LocationDisplay />
     </>
   );
